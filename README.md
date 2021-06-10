@@ -13,4 +13,4 @@ em seguida usando um laço de repetição (while) e fui criando números aleató
 <p>Também usei métodos dentro do javascript para criar os números aleatórios.</p>
 
 <h3>Link do projeto:</h3>
-<a href=""></a>
+<a href="">Clique aqui</a>
