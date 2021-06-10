@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Página de sorteio online</title>
+    <link rel="shortcut icon" type="image-x/png" href="images/img-quebra-cabeca.ico">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="JS/script.js" defer></script>
+    <meta name="description" content="Site de sorteios">
+    <meta name="keywords" content="sorteio, nomes">
+    <meta name="author" content="Sean Taron"> 
+</head>
+<body>
+    <header> <!--Cabeça do site-->
+        <div class="center">
+            <img src="images/img-quebra-cabeca.png">
+            <h1>Página para sortear nomes</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="center">
+            <form> <!--Formulário para registrar os nomes-->
+                <h2>Sortear nomes</h2>
+                <h3>Digite abaixo a quantidade de nomes que serão sorteados:</h3>
+                <input type="number" value="1" id="number">
+                <p id="pnum">Digite um número maior que zero!</p>
+                <p id="pnum2">Digite um número menor que a quantidade de participantes ou adcione mais participantes!</p>
+                <h3>Digite abaixo o nome da pessoa um em cada linha:</h3>
+                <textarea name="name" rows="10"></textarea>
+                <p id="pname">Digite os nomes dos participantes!</p>
+                <div class="buttons">
+                    <button type="button" onclick="sort()">SORTEAR</button>
+                    <button type="submit" onclick="clear_()">LIMPAR</button>
+                </div>
+
+                <div class="painel" style="display: none;"> <!--Painel com os nomes-->
+                    <div class="text">
+                        <h2>Resultado</h2>
+                    </div>
+                    <h3 id="h3"></h3>
+                </div>
+            </form>
+
+            <div class="instrucoes">
+                <h1>Como sortear os nomes</h1>
+                <ul class="list">
+                    <li>1. Digite a quantidade de pessoas que participarão do sorteio.</li>
+                    <li>2. Digite o nome de cada pessoa um em cada linha. Depois que digitar todos os nomes desejados clique em "SORTEAR" para iniciar o sorteio.</li>
+                    <li>3. Caso queira limpar todos os nomes clique em "LIMPAR".</li>
+                </ul>
+                <h1>Sorteio de nomes</h1>
+                <p>O sorteio de nomes serve para muitas coisas, por exêmplo fazer uma gincana na escola, entre colegas de trabalho, sortear um prêmio para uma ou várias pessoas. Ele é muito útil então aproveite.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center">
+            <img src="images/img-quebra-cabeca.png">
+            <h3>Página para sortear nomes</h3>
+        </div>
+    </footer>
+
+</body>
+</html>
+

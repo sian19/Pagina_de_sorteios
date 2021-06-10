@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "my-font";
+}
+
+@font-face{
+    font-family: "my-font";
+    src: url("../fonts/Lora-Italic-VariableFont_wght.ttf");
+}
+
+html, body{
+    height: 100%;
+    font-family: "my-font";
+}
+
+/* Abaixo os estilos do header */
+
+header{
+    width: 100%;
+    background-color: rgb(53, 149, 176);
+}
+
+header .center{
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 15px 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center img{
+    width: 50%;
+    max-width: 100px;
+}
+
+/* Abaixo os estilos do main */
+
+main{
+    background-color: rgb(166, 179, 70);
+    width: 100%;
+    padding: 100px 2%;
+}
+
+main .center{
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+/* Abaixo os estilos do formulário */
+
+form{
+    width: 100%;
+    padding: 12px 2%;
+    border: 1px solid rgb(53, 149, 176);
+    border-radius: 15px;
+}
+
+form h2{
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+form h3{
+    font-weight: normal;
+    padding-bottom: 8px;
+    
+}
+
+form h3:last-of-type{
+    padding-top: 12px;
+}
+
+form input{
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    padding: 8px 0;
+    padding-left: 4px;
+    font-size: 20px;
+}
+
+form p{
+    color: red;
+    display: none;
+}
+
+form textarea{
+    resize: none;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+}
+
+.buttons{
+    width: 100%;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button:last-of-type {
+    width: 100%;
+    max-width: 210px;
+}
+
+.buttons button:first-of-type{
+    width: 100%;
+    max-width: 250px;
+   
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(53, 149, 176);
+    border-radius: 4px;
+    border: 0;
+    height: 40px;
+    color: white;
+}
+
+button:hover{
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.painel{
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(187, 201, 83);
+    border-radius: 6px;
+}
+
+.painel .text{
+    width: 110px;
+    position: relative;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(145, 148, 130);
+}
+
+.painel h2{
+    font-weight: normal;
+    color: rgb(145, 148, 130);
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
+
+.painel h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.instrucoes{
+    width: 100%;
+    max-width: 730px;
+    padding: 12px 2%;
+    border:  1px solid rgb(53, 149, 176);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.instrucoes h1{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+/* Abaixo os estilos da lista */
+
+ul{
+    list-style: none;
+}
+ul li{
+    line-height: 24px;
+}
+
+.instrucoes h1:last-of-type{
+    padding-top: 12px;
+}
+
+/* Abaixo os estilos do footer */
+
+footer{
+    width: 100%;
+    padding: 25px 2%;
+    background-color: rgb(53, 149, 176);
+}
+
+footer .center{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+footer .center img{
+    width: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer .center h3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* Abaixo as mediaqueries do site */
+
+@media screen and (max-width: 740px){
+    /* Abaixo as mediaqueries dos buttons */
+    .buttons {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .buttons button:not(:last-of-type){
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .buttons button:last-of-type{
+        margin-top: 15px;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    /* Abaixo as mediaqueries do header */
+    header .center {
+        display: block;
+    }
+
+    header .center h1{
+        text-align: center;
+    }
+
+    header .center img{
+        max-width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* abaixo as mediaqueries do form */
+    form h3 {
+        text-align: center;
+    }
+
+    /* Abaixo as mediaqueries de instrucoes */
+
+    .instrucoes p{
+        text-align: center;
+    }
+    
+}
+
+
