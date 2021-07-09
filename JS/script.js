@@ -112,7 +112,7 @@ const sort = () => {
         let x = 0;
         for(let i = 0; i < sorteados.length; i++){
             x += 1;
-            result += x + "-" + sorteados[i] + "<br>";
+            result += x + "- " + sorteados[i] + "<br>";
         }
 
         h3.innerHTML = result;
